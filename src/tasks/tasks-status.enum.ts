@@ -6,5 +6,5 @@ export enum TasksStatus {
   IN_PROGRESS = 'IN_PROGRESS',
 }
 registerEnumType(TasksStatus, {
-  name: 'TasksStatus', // This will be the name of the enum in GraphQL
+  name: 'TasksStatus',
 });
