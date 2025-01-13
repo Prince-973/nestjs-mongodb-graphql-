@@ -6,9 +6,11 @@ import { Lesson } from './lesson.entity';
 import { LessonService } from './lesson.service';
 
 import { StudentsModule } from '../students/students.module';
+import { LessonController } from './lesson.controller';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Lesson]), StudentsModule],
   providers: [LessonResolver, LessonService],
+  controllers: [LessonController],
 })
 export class LessonModule {}

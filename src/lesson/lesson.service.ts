@@ -29,7 +29,6 @@ export class LessonService {
 
   async getAllLesson(): Promise<Lesson[]> {
     const lessons = await this.lessonRepository.find();
-    // console.log(lessons);
 
     return lessons;
   }
